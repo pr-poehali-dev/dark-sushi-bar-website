@@ -12,9 +12,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="mb-8 animate-fade-in">
           <div className="text-6xl mb-4">🍣</div>
-          <h1 className="text-5xl md:text-7xl font-montserrat font-bold mb-6">
-            SAKURA
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-montserrat font-bold mb-6"></h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Аутентичная японская кухня с доставкой по всему городу
           </p>
