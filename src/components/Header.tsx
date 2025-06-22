@@ -17,8 +17,12 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="text-2xl">🍣</div>
+          <div className="flex items-center space-x-3">
+            <img
+              src="https://cdn.poehali.dev/files/5a042dd6-87dc-47b2-a3ea-d5c9b5a983d1.png"
+              alt="SAIKO SUSHI"
+              className="h-10 w-auto"
+            />
             <h1 className="text-2xl font-montserrat font-bold text-primary">
               SAKURA
             </h1>

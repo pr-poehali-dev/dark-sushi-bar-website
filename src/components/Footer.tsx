@@ -7,8 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="text-2xl">🍣</div>
+            <div className="flex items-center space-x-3">
+              <img
+                src="https://cdn.poehali.dev/files/5a042dd6-87dc-47b2-a3ea-d5c9b5a983d1.png"
+                alt="SAIKO SUSHI"
+                className="h-8 w-auto"
+              />
               <h3 className="text-2xl font-montserrat font-bold text-primary">
                 SAKURA
               </h3>
