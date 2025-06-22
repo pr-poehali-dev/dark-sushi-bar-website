@@ -14,16 +14,16 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <header className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
               src="https://cdn.poehali.dev/files/5a042dd6-87dc-47b2-a3ea-d5c9b5a983d1.png"
-              alt="SAIKO SUSHI"
+              alt="SAKURA SUSHI"
               className="h-10 w-auto"
             />
-            <h1 className="text-2xl font-montserrat font-bold text-primary">
+            <h1 className="text-2xl font-montserrat font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
               SAKURA
             </h1>
           </div>
@@ -33,7 +33,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200"
+                className="text-slate-200 hover:text-orange-400 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
@@ -43,12 +43,12 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button
               variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-slate-900 transition-all duration-200"
             >
               <Icon name="Phone" size={16} className="mr-2" />
               +7 (999) 123-45-67
             </Button>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button className="bg-gradient-to-r from-orange-400 to-red-500 text-white hover:from-orange-500 hover:to-red-600 shadow-lg">
               Заказать
             </Button>
           </div>

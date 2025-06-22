@@ -61,13 +61,14 @@ const FeaturedMenu = () => {
   ];
 
   return (
-    <section id="menu" className="py-20 bg-muted/30">
+    <section id="menu" className="py-20 bg-slate-800/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-montserrat font-bold mb-4">
+          <h2 className="text-5xl font-montserrat font-bold mb-6 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
             Популярные блюда
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto mb-6"></div>
+          <p className="text-xl text-blue-200 max-w-2xl mx-auto">
             Отборные блюда японской кухни, приготовленные по традиционным
             рецептам
           </p>
@@ -77,34 +78,35 @@ const FeaturedMenu = () => {
           {featuredItems.map((item) => (
             <Card
               key={item.id}
-              className="group hover:shadow-lg transition-all duration-300 bg-card border-border overflow-hidden"
+              className="group hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-500 bg-slate-800/80 border-slate-600 overflow-hidden backdrop-blur-sm"
             >
               <div className="relative overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4">
-                  <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     {item.category}
                   </span>
                 </div>
               </div>
 
               <CardContent className="p-6">
-                <h3 className="text-xl font-montserrat font-semibold mb-2">
+                <h3 className="text-xl font-montserrat font-bold mb-2 text-white">
                   {item.name}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-blue-200 text-sm mb-4 leading-relaxed">
                   {item.description}
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-primary">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
                     {item.price} ₽
                   </span>
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button className="bg-gradient-to-r from-orange-400 to-red-500 text-white hover:from-orange-500 hover:to-red-600 shadow-lg transition-all duration-200">
                     <Icon name="Plus" size={16} className="mr-2" />В корзину
                   </Button>
                 </div>
